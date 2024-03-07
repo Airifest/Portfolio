@@ -33,7 +33,8 @@
         <aside class="sidebar" data-sidebar>
             <div class="sidebar-info">
                 <figure class="avatar-box">
-                    <img src="./assets/images/my-avatar.png" alt="<%= users[0].name %>" width="80">
+                    <!-- Assuming the image path is stored in the 'image' property of the user object -->
+                    <img src="/uploads/<%= users[0].image %>" alt="<%= users[0].name %>" width="80">
                 </figure>
                 <div class="info-content">
                     <h1 class="name" title="<%= users[0].name %>">
