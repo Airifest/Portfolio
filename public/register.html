@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: rgb(41, 41, 41);
+            color: white;
+        }
+        
+        .card {
+            margin-top: 50px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #333333;
+        }
+        
+        .card-header {
+            background-color: #c7ac5c;
+            color: white;
+            text-align: center;
+        }
+        
+        .form-control {
+            background-color: #333333;
+            color: white;
+            border-color: #c7ac5c;
+        }
+        
+        .form-control:focus {
+            background-color: #333333;
+            color: white;
+            border-color: #c7ac5c;
+            box-shadow: none;
+        }
+        
+        .btn-primary {
+            background-color: #c7ac5c;
+            border-color: #c7ac5c;
+        }
+        
+        .btn-primary:hover {
+            background-color: #b2924d;
+            border-color: #b2924d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h2>Registration Form</h2>
+        </div>
+        <div class="card-body">
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation" class="form-control" placeholder="Enter your occupation" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" class="form-control" placeholder="Enter your location" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
