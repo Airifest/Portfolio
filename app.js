@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const path = require('path');
 const bodyParser = require('body-parser');
-const multer = require('multer'); // Require multer for handling file uploads
+const multer = require('multer');
 
 const app = express();
 const PORT = 3000;
@@ -17,10 +17,8 @@ const pool = mysql.createPool({
     database: 'registration_form'
 });
 
-// Set the view engine to EJS
 app.set('view engine', 'ejs');
 
-// Multer configuration for handling file uploads
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
         cb(null, 'public/uploads'); // Destination directory
